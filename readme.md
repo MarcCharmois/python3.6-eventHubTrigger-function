@@ -3,7 +3,7 @@
 An Azure function to be triggered by an event that occurs within an Azure Event Hub. 
 ## Settings
  - 1 add a local.settings.json file with this structure
-'''
+```
 {
   "IsEncrypted": false,
   "Values": {
@@ -13,7 +13,7 @@ An Azure function to be triggered by an event that occurs within an Azure Event 
     SharedAccessKey="
   }
 }
-'''
+```
  - 2 
 Complete the receiverConnectionString value with the one of the eventhub namespace >> settings >> Shared access policies >> RootManageSharedAccessKey >> Connection string–primary key    
  - 3 replace the eventHubName value with yours in the fucntion.json file
