@@ -20,4 +20,4 @@ Complete the receiverConnectionString value with the one of the eventhub namespa
  ## Deployment
  Deploy with PowerShell or with the Azure Functions extension of Visual Studio code   
  You may have to create a setting for the receiverConnectionString in the Azure Portal and put the Event Hub Connection String value. 
- 
+ !["Azure Portal function setting: Event Hub Connection String value"](https://raw.githubusercontent.com/MarcCharmois/python3.7-eventHubTrigger-function/master/doc/img/azure-eventhubTriggered-Function-Settings.png)
