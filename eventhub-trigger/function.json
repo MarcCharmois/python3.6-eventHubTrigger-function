@@ -9,6 +9,13 @@
       "connection": "receiverConnectionString",
       "cardinality": "many",
       "consumerGroup": "$Default"
+    },
+    {
+      "type": "sendGrid",
+      "name": "outputMessage",
+      "from": "sender@contoso.com",
+      "apiKey": "SENDGRID_API_KEY",
+      "direction": "out"
     }
   ]
 }
