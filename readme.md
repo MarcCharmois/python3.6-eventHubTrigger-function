@@ -6,7 +6,7 @@ If the event body contains the string "test", send an email using sendgrid
 
 ## Settings 
 ### event-triggered part
- -1 add a local.settings.json file with this structure
+ 1. add a local.settings.json file with this structure
 ```
 {
   "IsEncrypted": false,
@@ -17,14 +17,14 @@ If the event body contains the string "test", send an email using sendgrid
   }
 }
 ```
- -2 
+ 2. 
 Complete the receiverConnectionString value with the one of the eventhub namespace >> settings >> Shared access policies >> RootManageSharedAccessKey >> Connection string–primary key    
- -3 replace the eventHubName value with yours in the function.json file   
+ 3. replace the eventHubName value with yours in the function.json file   
 
  ### mail-sending part
- -1 create a sendGrid resource in Azure    
- -2 register to Twilio SendGrid an get an API key    
- -3 in Azure portal, add a new app setting to the function   
+ 1. create a sendGrid resource in Azure    
+ 2. register to Twilio SendGrid an get an API key    
+ 3. in Azure portal, add a new app setting to the function   
     - name: SENDGRID_API_KEY
     - value: send grid api key value
 
