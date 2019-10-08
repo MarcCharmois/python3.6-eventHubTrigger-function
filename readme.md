@@ -24,12 +24,14 @@ If the event body contains the string "test", send an email using SendGrid
  ### mail-sending part
  1. Create a SendGrid Account resource in Azure    
  2. Register to Twilio SendGrid an get an API key    
- 3. In Azure portal, add a new app setting to the function   
-    - name: SENDGRID_API_KEY
-    - value: send grid api key value
 
  ## Deployment
- Deploy with PowerShell or with the Azure Functions extension of Visual Studio code   
- You will have to create a app setting for the receiverConnectionString in the Azure Portal and put the Event Hub Connection String value.   
+  1. Deploy with PowerShell or with the Azure Functions extension of Visual Studio code   
+  2. In Azure portal, add a new app setting to the function for the receiverConnectionString:
+    - name: receiverConnectionString
+    - value: Connection string–primary key (the same that the one you used for the local settings)
+  3.  In Azure portal, add a new app setting to the function for SendGrid API key:  
+    - name: SENDGRID_API_KEY
+    - value: send grid api key value
      
  !["Azure Portal function setting: Event Hub Connection String value"](https://raw.githubusercontent.com/MarcCharmois/python3.7-eventHubTrigger-function/master/doc/img/azure-eventhubTriggered-Function-Settings.png)
