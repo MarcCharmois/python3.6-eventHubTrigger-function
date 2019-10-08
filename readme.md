@@ -17,8 +17,7 @@ If the event body contains the string "test", send an email using sendgrid
   }
 }
 ```
- 2. 
-Complete the receiverConnectionString value with the one of the eventhub namespace >> settings >> Shared access policies >> RootManageSharedAccessKey >> Connection string–primary key    
+ 2. Complete the receiverConnectionString value with the one of the eventhub namespace >> settings >> Shared access policies >> RootManageSharedAccessKey >> Connection string–primary key    
  3. replace the eventHubName value with yours in the function.json file   
 
  ### mail-sending part
