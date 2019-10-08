@@ -5,6 +5,7 @@ csx
 edge
 Publish
 
+*.zip
 *.user
 *.suo
 *.cscfg
@@ -21,6 +22,7 @@ project.lock.json
 .secrets
 appsettings.json
 local.settings.json
+.zip
 
 node_modules
 dist
@@ -42,3 +44,4 @@ __pycache__/
 *.py[cod]
 *$py.class
 tutorial-function.zip
+python3.7-eventHubTrigger-function.zip

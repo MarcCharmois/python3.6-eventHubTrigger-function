@@ -1,5 +1,5 @@
 {
-    "azureFunctions.deploySubpath": "tutorial-function.zip",
+    "azureFunctions.deploySubpath": "python3.7-eventHubTrigger-function.zip",
     "azureFunctions.projectLanguage": "Python",
     "azureFunctions.projectRuntime": "~2",
     "debug.internalConsoleOptions": "neverOpen",
