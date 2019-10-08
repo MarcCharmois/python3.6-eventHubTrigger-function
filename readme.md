@@ -1,7 +1,8 @@
-# python3.7 eventHubTrigger function
+# python3.6 eventHubTrigger function
 ## Desctiption
-An Azure function triggered when an event occurs within an Azure Event Hub.   
-If the event contains the string "test" send an email using sendgrid
+An Azure function (Python 3.6) triggered when an event occurs within an Azure Event Hub.   
+If the event body contains the string "test", send an email using sendgrid (you can use the project <a href="https://github.com/MarcCharmois/Python3.7-azure-eventhub-1.3.2">Python3.7 Azure Eventhub 1.3.2 - Events Sender Receiver</a> to send events with the string test to the eventhub)    
+
 ## Settings 
 ### event-triggered part
  - 1 add a local.settings.json file with this structure
@@ -17,7 +18,8 @@ If the event contains the string "test" send an email using sendgrid
 ```
  - 2 
 Complete the receiverConnectionString value with the one of the eventhub namespace >> settings >> Shared access policies >> RootManageSharedAccessKey >> Connection string–primary key    
- - 3 replace the eventHubName value with yours in the function.json file
+ - 3 replace the eventHubName value with yours in the function.json file   
+
  ### mail-sending part
  - 1 create a sendGrid resource in Azure    
  - 2 register to Twilio SendGrid an get an API key    
@@ -27,6 +29,6 @@ Complete the receiverConnectionString value with the one of the eventhub namespa
 
  ## Deployment
  Deploy with PowerShell or with the Azure Functions extension of Visual Studio code   
- You may have to create a setting for the receiverConnectionString in the Azure Portal and put the Event Hub Connection String value.   
+ You will have to create a app setting for the receiverConnectionString in the Azure Portal and put the Event Hub Connection String value.   
      
  !["Azure Portal function setting: Event Hub Connection String value"](https://raw.githubusercontent.com/MarcCharmois/python3.7-eventHubTrigger-function/master/doc/img/azure-eventhubTriggered-Function-Settings.png)
