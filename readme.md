@@ -13,12 +13,13 @@ If the event body contains the string "test", send an email using SendGrid
   "Values": {
     "FUNCTIONS_WORKER_RUNTIME": "python",
     "AzureWebJobsStorage": "{AzureWebJobsStorage}", 
-    "receiverConnectionString":""
+    "receiverConnectionString":"{receiverConnectionString}"
   }
 }
 ```
- 2. Complete the receiverConnectionString value with the one of the eventhub namespace >> settings >> Shared access policies >> RootManageSharedAccessKey >> Connection string–primary key    
- 3. Replace the eventHubName value with yours in the function.json file   
+ 2. Replace the {receiverConnectionString} value with the one of the eventhub namespace >> settings >> Shared access policies >> RootManageSharedAccessKey >> Connection string–primary key    
+ 3. Replace the {AzureWebJobsStorage} value with the DefaultEndpointsProtocol of your Azure Storage Account
+ 4. Replace the eventHubName value with yours in the function.json file   
 
  ### mail-sending part
  1. Create a SendGrid Account resource in Azure    
