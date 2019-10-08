@@ -1,7 +1,7 @@
 # python3.6 eventHubTrigger function
 ## Desctiption
 An Azure function (Python 3.6) triggered when an event occurs within an Azure Event Hub.   
-If the event body contains the string "test", send an email using sendgrid   
+If the event body contains the string "test", send an email using SendGrid   
 (You can use the project <a href="https://github.com/MarcCharmois/Python3.7-azure-eventhub-1.3.2">Python3.7 Azure Eventhub 1.3.2 - Events Sender Receiver</a> to send events containing the string "test" to the eventhub)    
 
 ## Settings 
